@@ -172,7 +172,7 @@ Opções:
 ## Estrutura do Projeto
 
 ```
-├── agent.py                 # Teste do sistema via terminal
+agent.py                 # Teste do sistema via terminal
 LinkedInContentAgent/
 ├── __init__.py              # Exporta root_agent
 ├── agent.py                 # Agente raiz (SequentialAgent)
