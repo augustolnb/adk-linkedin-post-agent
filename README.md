@@ -95,7 +95,7 @@ pip install google-adk litellm python-dotenv requests PyPDF2
 pip install openai langchain-community duckduckgo-search
 ```
 
-## ⚙️ Configuração
+## Configuração
 
 ### 1. Variáveis de Ambiente
 
@@ -170,7 +170,7 @@ Opções:
 - `n` - Rejeitar (com feedback opcional)
 - `editar` - Solicitar alterações
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 LinkedInContentAgent/
