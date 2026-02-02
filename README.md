@@ -121,7 +121,7 @@ Para obter as credenciais do LinkedIn, siga o tutorial:
 ### Via Script de Teste (Recomendado)
 
 ```bash
-cd linkedin_content_engine
+cd diretorio_do_projeto/
 python test_agent.py
 ```
 
@@ -130,7 +130,7 @@ O script solicita um prompt interativo no terminal.
 ### Via ADK Web
 
 ```bash
-cd linkedin_content_engine
+cd diretorio_do_projeto/
 adk web
 ```
 
