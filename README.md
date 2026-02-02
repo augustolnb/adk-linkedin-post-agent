@@ -1,4 +1,4 @@
-# 🚀 LinkedIn Content Engine
+# LinkedIn Content Engine
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Google ADK](https://img.shields.io/badge/Google-ADK-orange.svg)](https://github.com/google/adk-python)
@@ -8,7 +8,7 @@ Sistema Multi-Agentes para transformar documentos técnicos em posts de alta per
 
 ![Pipeline](https://img.shields.io/badge/Pipeline-Sequential-blueviolet)
 
-## 📋 Índice
+## Índice
 
 - [Sobre o Projeto](#-sobre-o-projeto)
 - [Arquitetura](#-arquitetura)
@@ -21,7 +21,7 @@ Sistema Multi-Agentes para transformar documentos técnicos em posts de alta per
 - [Ferramentas](#-ferramentas)
 - [Licença](#-licença)
 
-## 🎯 Sobre o Projeto
+## Sobre o Projeto
 
 O **LinkedIn Content Engine** automatiza o workflow de criação de conteúdo para LinkedIn através de um pipeline de 5 agentes especializados:
 
@@ -31,21 +31,21 @@ O **LinkedIn Content Engine** automatiza o workflow de criação de conteúdo pa
 4. **Geração** de imagem profissional (opcional) com OpenAI GPT-4.1-mini
 5. **Confirmação** e **Publicação** via API oficial do LinkedIn
 
-### ✨ Principais Features
+### Features
 
-- 📄 Suporte a Markdown e PDF como input
-- 🔍 Enriquecimento com contexto real-time via DuckDuckGo
-- ✍️ Copywriting otimizado para engajamento no LinkedIn
-- 🎨 **Geração condicional de imagens** - escolha se quer ou não imagem
-- ✅ **Confirmação via terminal** antes de publicar
-- 📤 Publicação automática via LinkedIn API
-- 💰 Otimização de custos com modelos diferenciados
+- Suporte a Markdown e PDF como input
+- Enriquecimento com contexto real-time via DuckDuckGo
+- Copywriting otimizado para engajamento no LinkedIn
+- **Geração condicional de imagens** - escolha se quer ou não imagem
+- **Confirmação via terminal** antes de publicar
+- Publicação automática via LinkedIn API
+- Otimização de custos com modelos diferenciados
 
-## 🏗️ Arquitetura
+## Arquitetura
 
 ```mermaid
 flowchart TB
-    INPUT["📄 Documento"] --> A["📊 Analyst"]
+    INPUT[" Documento"] --> A["📊 Analyst"]
     A --> R["🔍 Researcher"]
     R --> C["✍️ Copywriter"]
     C --> I["🎨 ImageGen<br/>(condicional)"]
@@ -70,7 +70,7 @@ O sistema utiliza o padrão **SequentialAgent** do Google ADK, onde cada agente:
 | [LangChain + DuckDuckGo](https://python.langchain.com/) | Busca de tendências e notícias |
 | [LinkedIn API](https://developer.linkedin.com) | Publicação automática |
 
-## 📦 Instalação
+## Instalação
 
 ### Pré-requisitos
 
@@ -116,7 +116,7 @@ LINKEDIN_PERSON_URN=urn:li:person:abc123
 Para obter as credenciais do LinkedIn, siga o tutorial:
 - [TUTORIAL_LINKEDIN_API.md](./TUTORIAL_LINKEDIN_API.md)
 
-## 🚀 Uso
+## Uso
 
 ### Via Script de Teste (Recomendado)
 
@@ -193,7 +193,7 @@ LinkedInContentAgent/
     └── linkedin_publisher.py # Publicação no LinkedIn
 ```
 
-## 🤖 Agentes
+## Agentes
 
 | Agente | Modelo | Função | Output Key |
 |--------|--------|--------|------------|
@@ -207,7 +207,7 @@ LinkedInContentAgent/
 
 O sistema usa modelos de **baixo custo** (GPT-4.1-nano) para a maioria das tarefas, reservando o modelo **premium** (Claude 3.5 Sonnet) apenas para o Copywriter, onde a qualidade de escrita é crítica.
 
-## 🔧 Ferramentas
+## Ferramentas
 
 | Ferramenta | Descrição |
 |------------|-----------|
@@ -219,14 +219,14 @@ O sistema usa modelos de **baixo custo** (GPT-4.1-nano) para a maioria das taref
 | `confirm_post` | Exibe post e pede confirmação no terminal |
 | `publish_to_linkedin` | Publica via LinkedIn API |
 
-## 📄 Documentação Adicional
+## Documentação Adicional
 
 - [Memorial Técnico](./MEMORIAL_TECNICO.md) - Descrição técnica detalhada
 - [Diagrama de Agentes](./diagrama_agentes.md) - Visualização da arquitetura
 - [Tutorial LinkedIn API](./TUTORIAL_LINKEDIN_API.md) - Configuração da API
 - [Tutorial Observabilidade](./TUTORIAL_OBSERVABILIDADE_AVALIACAO.md) - Métricas e avaliação
 
-## 📝 Licença
+## Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
