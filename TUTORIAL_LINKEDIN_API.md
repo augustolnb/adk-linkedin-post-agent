@@ -249,8 +249,15 @@ python test_linkedin.py
 ## Passo 8: Executar o Sistema
 
 ```bash
-cd 13-pratica
+cd caminho_do_diretorio/
 adk web
+```
+
+ou
+
+```bash
+cd caminho_do_diretorio/
+python agent.py
 ```
 
 Prompt de teste:
