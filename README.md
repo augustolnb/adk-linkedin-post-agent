@@ -1,10 +1,10 @@
-# LinkedIn Content Engine
+# LinkedIn Content Agent
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Google ADK](https://img.shields.io/badge/Google-ADK-orange.svg)](https://github.com/google/adk-python)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-Sistema Multi-Agentes para transformar documentos técnicos em posts de alta performance para LinkedIn, com geração de imagem condicional, confirmação antes de publicar e publicação automática.
+Sistema Multi-Agentes para transformar documentos técnicos em posts de alta performance para LinkedIn, com geração de imagem opcional, confirmação prévia e publicação automática.
 
 ![Pipeline](https://img.shields.io/badge/Pipeline-Sequential-blueviolet)
 
