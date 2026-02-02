@@ -23,7 +23,7 @@ Sistema Multi-Agentes para transformar documentos técnicos em posts de alta per
 
 ## Sobre o Projeto
 
-O **LinkedIn Content Engine** automatiza o workflow de criação de conteúdo para LinkedIn através de um pipeline de 5 agentes especializados:
+O **LinkedIn Content Agent** automatiza o workflow de criação de conteúdo para LinkedIn através de um pipeline de 5 agentes especializados:
 
 1. **Análise** de documentos técnicos (Markdown/PDF)
 2. **Pesquisa** de tendências e notícias relacionadas via DuckDuckGo
@@ -82,8 +82,8 @@ O sistema utiliza o padrão **SequentialAgent** do Google ADK, onde cada agente:
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/linkedin-content-engine.git
-cd linkedin-content-engine
+git clone https://github.com/augustolnb/adk-linkedin-post-agent.git
+cd adk-linkedin-post-agent
 
 # Crie um ambiente virtual
 python -m venv .venv
@@ -98,7 +98,7 @@ pip install -r requirements.txt
 
 ### 1. Variáveis de Ambiente
 
-Crie um arquivo `.env` na pasta `LinkedInContentAgent/`:
+Crie um arquivo `.env` na pasta `adk-linkedin-post-agent/`:
 
 ```env
 # LLMs
@@ -172,6 +172,7 @@ Opções:
 ## Estrutura do Projeto
 
 ```
+├── agent.py                 # Teste do sistema via terminal
 LinkedInContentAgent/
 ├── __init__.py              # Exporta root_agent
 ├── agent.py                 # Agente raiz (SequentialAgent)
@@ -179,10 +180,10 @@ LinkedInContentAgent/
 │
 ├── subagents/               # Sub-agentes especializados
 │   ├── AnalystAgent/        # Analisa documentos
-│   ├── ResearcherAgent/     # Pesquisa com DuckDuckGo
+│   ├── ResearcherAgent/     # Pesquisa tópicos atuais sobre o tema
 │   ├── CopywriterAgent/     # Redige o post
-│   ├── ImageGeneratorAgent/ # Gera imagem (condicional)
-│   └── PublisherAgent/      # Confirma e publica
+│   ├── ImageGeneratorAgent/ # Gera imagem (opcional)
+│   └── PublisherAgent/      # Confirma e publica no LinkedIn
 │
 └── tools/                   # Ferramentas dos agentes
     ├── document_reader.py   # Leitura de MD/PDF
