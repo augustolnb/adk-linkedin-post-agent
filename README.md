@@ -91,8 +91,7 @@ source .venv/bin/activate  # Linux/Mac
 # .venv\Scripts\activate   # Windows
 
 # Instale as dependências
-pip install google-adk litellm python-dotenv requests PyPDF2
-pip install openai langchain-community duckduckgo-search
+pip install -r requirements.txt
 ```
 
 ## Configuração
